@@ -1,0 +1,57 @@
+Arguments: 
+  /Users/thomasburridge/.nvm/versions/node/v18.15.0/bin/node /Users/thomasburridge/.nvm/versions/node/v18.15.0/bin/yarn add -D dotenv-cli
+
+PATH: 
+  /Users/thomasburridge/.gvm/bin:/Users/thomasburridge/.pyenv/shims:/Users/thomasburridge/.nvm/versions/node/v18.15.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/thomasburridge/.ebcli-virtual-env/executables:/Users/thomasburridge/Library/Android/sdk/platform-tools:/Users/thomasburridge/.gvm/bin:/Users/thomasburridge/.pyenv/bin:/Users/thomasburridge/Library/pnpm:/Users/thomasburridge/.nvm/versions/node/v18.15.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/thomasburridge/.cargo/bin:/Users/thomasburridge/.yarn/bin:/Users/thomasburridge/.yarn/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.15.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: Client network socket disconnected before secure TLS connection was established
+      at connResetException (node:internal/errors:717:14)
+      at TLSSocket.onConnectEnd (node:_tls_wrap:1595:19)
+      at TLSSocket.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "hermes",
+    "version": "0.1.0",
+    "bin": {
+      "hermes": "bin/hermes.js"
+    },
+    "scripts": {
+      "build": "tsc",
+      "watch": "tsc -w",
+      "test": "jest",
+      "cdk": "dotenv -- cdk"
+    },
+    "devDependencies": {
+      "@types/jest": "^29.5.3",
+      "@types/node": "20.4.10",
+      "jest": "^29.6.2",
+      "ts-jest": "^29.1.1",
+      "aws-cdk": "2.92.0",
+      "ts-node": "^10.9.1",
+      "typescript": "~5.1.6"
+    },
+    "dependencies": {
+      "aws-cdk-lib": "2.92.0",
+      "constructs": "^10.0.0",
+      "source-map-support": "^0.5.21"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
