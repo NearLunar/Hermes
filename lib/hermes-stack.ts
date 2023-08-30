@@ -79,7 +79,7 @@ export class HermesStack extends cdk.Stack {
 
         // Catch-all method for GET requests
         const getMethod = apiGateway.root
-            .addResource("{proxy+}")
+            .addResource("{slug}")
             .addMethod("GET", visitLinkLambdaIntegration, {
                 requestValidator,
             });
