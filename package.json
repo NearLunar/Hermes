@@ -16,6 +16,7 @@
         "@typescript-eslint/eslint-plugin": "^6.5.0",
         "@typescript-eslint/parser": "^6.5.0",
         "aws-cdk": "2.93.0",
+        "cdk-nag": "^2.27.116",
         "dotenv-cli": "^7.3.0",
         "eslint": "^8.48.0",
         "eslint-config-prettier": "^9.0.0",
